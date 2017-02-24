@@ -229,26 +229,26 @@ msgstr "{site_title} tilastot"
 #: ckanext/showcase/templates/home/snippets/stats.html:10
 msgid "dataset"
 msgid_plural "datasets"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tietoaineisto"
+msgstr[1] "tietoaineistoa"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:16
 msgid "organization"
 msgid_plural "organizations"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "organisaatio"
+msgstr[1] "organisaatiot"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:22
 msgid "group"
 msgid_plural "groups"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "kategoria"
+msgstr[1] "kategoriat"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:28
 msgid "showcase"
 msgid_plural "showcases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "sovellus"
+msgstr[1] "sovellukset"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
