@@ -193,7 +193,7 @@ class ShowcaseController(PackageController):
         context = {'model': model, 'session': model.Session,
                    'user': c.user or c.author, 'for_view': True,
                    'auth_user_obj': c.userobj}
-        data_dict = {'id': id}
+        data_dict = {'id': id, "type": "dataset"}
 
         try:
             check_access('package_show', context, data_dict)
