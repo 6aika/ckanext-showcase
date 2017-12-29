@@ -192,7 +192,7 @@ class ShowcaseController(PackageController):
         context = {'model': model, 'session': model.Session,
                    'user': c.user or c.author, 'for_view': True,
                    'auth_user_obj': c.userobj}
-        data_dict = {'id': id, "type": "dataset"}
+        data_dict = {'id': id}
 
         try:
             check_access('package_show', context, data_dict)
@@ -203,6 +203,8 @@ class ShowcaseController(PackageController):
 
         try:
             c.pkg_dict = get_action('package_show')(context, data_dict)
+            if c.pkg_dict['type'] != 'dataset':
+                raise NotFound
             c.showcase_list = get_action('ckanext_package_showcase_list')(
                 context, {'package_id': c.pkg_dict['id']})
         except NotFound:
