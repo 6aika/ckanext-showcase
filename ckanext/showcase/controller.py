@@ -5,7 +5,6 @@ from pylons import config
 
 from ckan.plugins import toolkit as tk
 import ckan.model as model
-import ckan.lib.base as base
 import ckan.lib.helpers as h
 import ckan.lib.navl.dictization_functions as dict_fns
 import ckan.logic as logic
@@ -23,7 +22,7 @@ c = tk.c
 request = tk.request
 render = tk.render
 abort = tk.abort
-redirect_to = h.redirect_to
+redirect = tk.redirect_to
 NotFound = tk.ObjectNotFound
 ValidationError = tk.ValidationError
 check_access = tk.check_access
@@ -104,7 +103,7 @@ class ShowcaseController(PackageController):
         url = h.url_for(
             controller='ckanext.showcase.controller:ShowcaseController',
             action='manage_datasets', id=pkg_dict['name'])
-        redirect_to(url)
+        redirect(url)
 
     def _save_edit(self, name_or_id, context, package_type=None):
         '''
@@ -128,7 +127,7 @@ class ShowcaseController(PackageController):
         url = h.url_for(
             controller='ckanext.showcase.controller:ShowcaseController',
             action='read', id=pkg['name'])
-        redirect_to(url)
+        redirect(url)
 
     def read(self, id, format='html'):
         '''
@@ -239,7 +238,7 @@ class ShowcaseController(PackageController):
                 else:
                     h.flash_success(
                         _("The dataset has been removed from the showcase."))
-            redirect_to(h.url_for(
+            redirect(h.url_for(
                 controller='ckanext.showcase.controller:ShowcaseController',
                 action='dataset_showcase_list', id=c.pkg_dict['name']))
 
@@ -298,7 +297,7 @@ class ShowcaseController(PackageController):
                 url = h.url_for(
                     controller='ckanext.showcase.controller:ShowcaseController',
                     action='manage_datasets', id=id)
-                redirect_to(url)
+                redirect(url)
 
         # Are we creating a showcase/dataset association?
         elif (request.method == 'POST'
@@ -330,7 +329,7 @@ class ShowcaseController(PackageController):
                 url = h.url_for(
                     controller='ckanext.showcase.controller:ShowcaseController',
                     action='manage_datasets', id=id)
-                redirect_to(url)
+                redirect(url)
 
         self._add_dataset_search(c.pkg_dict['id'], c.pkg_dict['name'])
 
@@ -550,7 +549,7 @@ class ShowcaseController(PackageController):
             else:
                 h.flash_success(_("The user is now a Showcase Admin"))
 
-            return redirect_to(h.url_for(
+            return redirect(h.url_for(
                 controller='ckanext.showcase.controller:ShowcaseController',
                 action='manage_showcase_admins'))
 
@@ -588,7 +587,7 @@ class ShowcaseController(PackageController):
             else:
                 h.flash_success(_('The user is no longer a Showcase Admin'))
 
-            return redirect_to(h.url_for(
+            return redirect(h.url_for(
                 controller='ckanext.showcase.controller:ShowcaseController',
                 action='manage_showcase_admins'))
 
