@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-09-23 14:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Joonas Dukpa, 2017\n"
+"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2017\n"
 "Language-Team: English (United Kingdom) (https://www.transifex.com/6aika-dataportal/teams/68018/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -155,7 +155,7 @@ msgstr ""
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:3
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:16
 msgid "Confirm Remove"
-msgstr ""
+msgstr "Confirm remove"
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:11
 msgid ""
@@ -169,11 +169,11 @@ msgstr "Cancel"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:9
 msgid "Manage Showcase Admins"
-msgstr ""
+msgstr "Manage showcase admins"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:16
 msgid "Add an Existing User"
-msgstr ""
+msgstr "Add an existing user"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:19
 msgid ""
@@ -186,11 +186,11 @@ msgstr ""
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:32
 msgid "Add User"
-msgstr ""
+msgstr "Add user"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:38
 msgid "Showcase Admins"
-msgstr ""
+msgstr "Showcase admins"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:43
 msgid "User"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/package/read_base.html:6
 msgid "Activity Stream"
-msgstr ""
+msgstr "Activity stream"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:3
 msgid "Showcases - Add datasets"
@@ -280,13 +280,13 @@ msgstr "Relevance"
 #: ckanext/showcase/templates/showcase/manage_datasets.html:25
 #: ckanext/showcase/templates/showcase/search.html:28
 msgid "Name Ascending"
-msgstr ""
+msgstr "Name ascending"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:23
 #: ckanext/showcase/templates/showcase/manage_datasets.html:26
 #: ckanext/showcase/templates/showcase/search.html:29
 msgid "Name Descending"
-msgstr ""
+msgstr "Name descending"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:24
 #: ckanext/showcase/templates/showcase/manage_datasets.html:27
@@ -308,7 +308,7 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
 msgid "Add to Showcase"
-msgstr ""
+msgstr "Add to showcase"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
@@ -318,7 +318,7 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/confirm_delete.html:3
 #: ckanext/showcase/templates/showcase/confirm_delete.html:15
 msgid "Confirm Delete"
-msgstr ""
+msgstr "Confirm delete"
 
 #: ckanext/showcase/templates/showcase/confirm_delete.html:11
 msgid "Are you sure you want to delete showcase - {showcase_name}?"
@@ -332,7 +332,7 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/new.html:3
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Create Showcase"
-msgstr ""
+msgstr "Create showcase"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:35
 msgid "View showcase"
@@ -356,7 +356,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:109
 msgid "Remove from Showcase"
-msgstr ""
+msgstr "Remove from showcase"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:140
 msgid "This showcase has no datasets associated to it"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
-msgstr ""
+msgstr "Create a showcase"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:15
 msgid "Title"
@@ -372,7 +372,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:15
 msgid "eg. A descriptive title"
-msgstr "Name of requested data / title"
+msgstr "Application name, title of the article etc."
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:24
 msgid "URL"
@@ -388,7 +388,7 @@ msgstr "Description"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:28
 msgid "eg. Some useful notes about the data"
-msgstr ""
+msgstr "Short description of the application and its most important features."
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:33
 msgid "eg. economy, mental health, government"
@@ -404,11 +404,11 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:48
 msgid "Submitted By"
-msgstr ""
+msgstr "Submitted by"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:48
 msgid "Joe Bloggs"
-msgstr ""
+msgstr "Firstname Lastname"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "Submitter Email"
@@ -428,7 +428,7 @@ msgstr "Delete"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Update Showcase"
-msgstr ""
+msgstr "Update showcase"
 
 #: ckanext/showcase/templates/showcase/read.html:46
 msgid "Manage"
@@ -449,7 +449,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/search.html:13
 msgid "Add Showcase"
-msgstr ""
+msgstr "Add showcase"
 
 #: ckanext/showcase/templates/showcase/search.html:33
 msgid "Search showcases..."
@@ -457,7 +457,7 @@ msgstr "Search showcases"
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:4
 msgid "What are Showcases?"
-msgstr ""
+msgstr "What are showcases?"
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:8
 msgid ""
@@ -480,11 +480,11 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
 msgid "Datasets in Showcase"
-msgstr ""
+msgstr "Datasets in showcase"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
 msgid "There are no Datasets in this Showcase"
-msgstr ""
+msgstr "There are no datasets in this showcase"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
 msgid "This showcase has no description"
