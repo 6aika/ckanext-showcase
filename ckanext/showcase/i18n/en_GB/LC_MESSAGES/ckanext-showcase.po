@@ -4,17 +4,22 @@
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 # 
+# Translators:
+# Juha Härkönen <juha.harkonen@ouka.fi>, 2017
+# Joonas Dukpa, 2017
+# Hami Kekkonen <hami.kekkonen@hel.fi>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-showcase 1.0.0b1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-09-23 14:49+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2017\n"
+"PO-Revision-Date: 2017-02-23 11:50+0000\n"
+"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2019\n"
 "Language-Team: English (United Kingdom) (https://www.transifex.com/6aika-dataportal/teams/68018/en_GB/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 "Language: en_GB\n"
@@ -22,11 +27,11 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:56
 msgid "Unauthorized to create a package"
-msgstr ""
+msgstr "Unauthorised to create a package"
 
 #: ckanext/showcase/controller.py:71 ckanext/showcase/controller.py:267
 msgid "User not authorized to edit {showcase_id}"
-msgstr ""
+msgstr "User not authorised to edit {showcase_id}"
 
 #: ckanext/showcase/controller.py:147 ckanext/showcase/controller.py:184
 #: ckanext/showcase/controller.py:224 ckanext/showcase/controller.py:238
@@ -36,11 +41,11 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:149 ckanext/showcase/controller.py:276
 msgid "Unauthorized to read showcase"
-msgstr ""
+msgstr "Unauthorised to read showcase"
 
 #: ckanext/showcase/controller.py:171 ckanext/showcase/controller.py:182
 msgid "Unauthorized to delete showcase"
-msgstr ""
+msgstr "Unauthorised to delete showcase"
 
 #: ckanext/showcase/controller.py:176
 msgid "Showcase has been deleted."
@@ -52,11 +57,11 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:203
 msgid "Not authorized to see this page"
-msgstr ""
+msgstr "Not authorised to see this page"
 
 #: ckanext/showcase/controller.py:212
 msgid "Unauthorized to read package"
-msgstr ""
+msgstr "Unauthorised to read package"
 
 #: ckanext/showcase/controller.py:227 ckanext/showcase/controller.py:329
 msgid "The dataset has been added to the showcase."
@@ -72,7 +77,7 @@ msgstr[1] ""
 
 #: ckanext/showcase/controller.py:462 ckanext/showcase/templates/header.html:6
 msgid "Organizations"
-msgstr "Organizations"
+msgstr "Organisations"
 
 #: ckanext/showcase/controller.py:463 ckanext/showcase/templates/header.html:7
 #: ckanext/showcase/templates/package/read_base.html:5
@@ -98,11 +103,11 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:531 ckanext/showcase/controller.py:567
 msgid "User not authorized to view page"
-msgstr ""
+msgstr "User not authorised to view page"
 
 #: ckanext/showcase/controller.py:540 ckanext/showcase/controller.py:581
 msgid "Unauthorized to perform that action"
-msgstr ""
+msgstr "Unauthorised to perform that action"
 
 #: ckanext/showcase/controller.py:542
 msgid "User '{user_name}' not found."
@@ -110,15 +115,15 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:547
 msgid "The user is now a Showcase Admin"
-msgstr ""
+msgstr "The user is now a showcase admin"
 
 #: ckanext/showcase/controller.py:583
 msgid "The user is not a Showcase Admin"
-msgstr ""
+msgstr "The user is not a showcase admin"
 
 #: ckanext/showcase/controller.py:585
 msgid "The user is no longer a Showcase Admin"
-msgstr ""
+msgstr "The user is no longer a showcase admin"
 
 #: ckanext/showcase/logic/converters.py:24
 #: ckanext/showcase/logic/validators.py:29
@@ -160,7 +165,7 @@ msgstr "Confirm remove"
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:11
 msgid ""
 "Are you sure you want to remove this user as a Showcase Admin - {name}?"
-msgstr ""
+msgstr "Are you sure you want to remove user {name} as a showcase admin?"
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:15
 #: ckanext/showcase/templates/showcase/confirm_delete.html:14
@@ -179,6 +184,7 @@ msgstr "Add an existing user"
 msgid ""
 "To make an existing user a Showcase Admin, search for their username below."
 msgstr ""
+"To make an existing user a showcase admin, search for their username below."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:23
 msgid "Username"
@@ -200,6 +206,7 @@ msgstr ""
 msgid ""
 "Are you sure you want to remove this user from the Showcase Admin list?"
 msgstr ""
+"Are you sure you want to remove this user from the showcase admin list?"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:53
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
@@ -208,7 +215,7 @@ msgstr "Remove"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:61
 msgid "There are currently no Showcase Admins."
-msgstr ""
+msgstr "There are currently no showcase admins."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:69
 msgid ""
@@ -229,8 +236,8 @@ msgstr[1] ""
 #: ckanext/showcase/templates/home/snippets/stats.html:16
 msgid "organization"
 msgid_plural "organizations"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "organisation"
+msgstr[1] "organisations"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:22
 msgid "group"
@@ -259,8 +266,7 @@ msgstr ""
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
 msgstr ""
-"There are no applications that feature this dataset in the application "
-"gallery."
+"There are no showcases that feature this dataset in the showcase gallery."
 
 #: ckanext/showcase/templates/package/read_base.html:6
 msgid "Activity Stream"
@@ -372,7 +378,7 @@ msgstr ""
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:15
 msgid "eg. A descriptive title"
-msgstr "Application name, title of the article etc."
+msgstr "Showcase name, title of the article etc."
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:24
 msgid "URL"
@@ -380,7 +386,7 @@ msgstr "URL"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:24
 msgid "eg. my-showcase"
-msgstr ""
+msgstr "eg. showcase-name"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:28
 msgid "Description"
@@ -388,7 +394,7 @@ msgstr "Description"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:28
 msgid "eg. Some useful notes about the data"
-msgstr "Short description of the application and its most important features."
+msgstr "Short description of the showcase and its most important features."
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:33
 msgid "eg. economy, mental health, government"
@@ -412,7 +418,7 @@ msgstr "Firstname Lastname"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "Submitter Email"
-msgstr ""
+msgstr "Submitter email"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "joe@example.com"
@@ -493,12 +499,12 @@ msgstr ""
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:35
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} dataset"
+msgstr[1] "{num} datasets"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:37
 msgid "0 Datasets"
-msgstr ""
+msgstr "0 datasets"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:41
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:42

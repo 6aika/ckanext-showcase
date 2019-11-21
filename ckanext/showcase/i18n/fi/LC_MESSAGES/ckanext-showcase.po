@@ -4,17 +4,22 @@
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 # 
+# Translators:
+# Mikko Nieminen <mikko.nieminen@gofore.com>, 2017
+# Joonas Dukpa, 2017
+# Hami Kekkonen <hami.kekkonen@hel.fi>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-showcase 1.0.0b1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-09-23 14:49+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Joonas Dukpa, 2017\n"
+"PO-Revision-Date: 2017-02-23 11:50+0000\n"
+"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2019\n"
 "Language-Team: Finnish (https://www.transifex.com/6aika-dataportal/teams/68018/fi/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 "Language: fi\n"
@@ -230,7 +235,7 @@ msgstr "{site_title} tilastot"
 msgid "dataset"
 msgid_plural "datasets"
 msgstr[0] "tietoaineisto"
-msgstr[1] "tietoaineistoa"
+msgstr[1] "tietoaineistot"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:16
 msgid "organization"
@@ -336,7 +341,7 @@ msgstr "Muokkaa"
 #: ckanext/showcase/templates/showcase/new.html:3
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Create Showcase"
-msgstr "Luo sovellus"
+msgstr "Tallenna sovellus"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:35
 msgid "View showcase"
@@ -368,7 +373,7 @@ msgstr "Tähän sovellukseen ei liity tietoaineistoja"
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
-msgstr "Luo sovellus"
+msgstr "Tallenna sovellus"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:15
 msgid "Title"
@@ -384,7 +389,7 @@ msgstr "URL"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:24
 msgid "eg. my-showcase"
-msgstr "esim. minun-sovellukseni"
+msgstr "esim. sovelluksen-nimi"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:28
 msgid "Description"
@@ -470,11 +475,9 @@ msgid ""
 " Showcases collect together the best examples of datasets in use, to provide"
 " further insight, ideas, and inspiration."
 msgstr ""
-"Tietoaineistoja on käytetty sovellusten, verkkosivujen ja visualisointien "
-"muodostamiseen. Niihin on viitattu artikkeleissa ja niistä on kirjoitettu "
-"uutisissa ja blogeissa. Sovellukset keräävät yhteen parhaat esimerkit "
-"käytössä olevista tietoaineistoista luodakseen lisää inspiraatiota ja "
-"ideoita datan hyödyntämiseen."
+"Avoimen datan pohjalta on tehty mm. sovelluksia, visualisointeja ja "
+"datajournalismia. Sovellusgalleriassa esitellään esimerkkejä avoimen datan "
+"hyödyntämisestä."
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:12
 #, python-format
