@@ -2,11 +2,11 @@
    these badges work. The necessary Travis and Coverage config files have been
    generated for you.
 
-.. image:: https://travis-ci.org/ckan/ckanext-showcase.svg?branch=master
-    :target: https://travis-ci.org/ckan/ckanext-showcase
+.. image:: https://github.com/ckan/ckanext-showcase/workflows/Tests/badge.svg?branch=master
+    :target: https://github.com/ckan/ckanext-showcase/actions
 
-.. image:: https://coveralls.io/repos/ckan/ckanext-showcase/badge.svg
-  :target: https://coveralls.io/r/ckan/ckanext-showcase
+.. image:: https://codecov.io/gh/ckan/ckanext-showcase/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/ckan/ckanext-showcase
 
 ================
 ckanext-showcase
@@ -30,14 +30,7 @@ ckanext-showcase is intended to be a more powerful replacement for the
 Requirements
 ------------
 
-
-Compatible with CKAN 2.3+.
-
-N.B. The ``migrate`` command, detailed below, requires the Related Item models
-and actions, which have been removed in CKAN 2.6. If you wish to migrate your
-Related Items, please first upgrade CKAN to 2.5, do the migration, then
-continue upgrading to CKAN 2.6+.
-
+Tested on CKAN 2.7 to 2.10..
 
 ------------
 Installation
@@ -77,6 +70,20 @@ do::
     cd ckanext-showcase
     python setup.py develop
     pip install -r dev-requirements.txt
+
+
+The extension contains a custom build of CKEditor to allow using a WYSIWYG editor
+to write the content of the showcase. It has been built using `webpack` and the
+repository contains all the files needed to edit and customize it if needed::
+
+    npm install
+    npx webpack --config webpack.config.js
+
+The webpack will use as entrypoint a file located in `ckanext/showcase/fanstatic/src/ckeditor.js`,
+create a build and save it to `ckanext/showcase/fanstatic/dist/ckeditor.js`
+
+More info on how to build CKEditor from source:
+https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html#scenario-2-building-from-source
 
 
 ---
@@ -127,29 +134,41 @@ Showcase admin actions::
     curl -X POST http://127.0.0.1:5000/api/3/action/ckanext_showcase_admin_list -H "Authorization:{YOUR-API-KEY}" -d ''
 
 
-----------------------------
-Migrating from Related Items
-----------------------------
+---
+UI
+---
 
-If you already have Related Items in your database, you can use the ``showcase
-migrate`` command to create Showcases from Related Items.
+The Showcase extension adds the following pages to the user interface:
+
+
+* The main showcase index is available on: ``http://127.0.0.1:5000/showcase``
+
+* To create a new showcase: ``http://127.0.0.1:5000/showcase/new``
+
+* To edit or delete a showcase: ``http://127.0.0.1:5000/showcase/edit/{showcase-name}``
+
+* To add a Showcase Admin : ``http://127.0.0.1:5000/ckan-admin/showcase_admins``
+
+
+---------------------
+Configuration
+---------------------
+
+If you want to use the WYSIWYG editor instead of Markdown to write the content of the showcase::
+
+    ckanext.showcase.editor = ckeditor
+
+-----------------------------------------------
+Migrating Showcases Notes from Markdown to HTML
+-----------------------------------------------
+
+When using CKEditor as WYSIWYG editor showcases notes are stored in HTML
+instead of Markdown. To migrate all existing notes from markdown to
+HTML you can use the ```showcase markdown_to_html``` command.
 
 From the ``ckanext-showcase`` directory::
 
-    paster showcase migrate -c {path to production.ini}
-
-Note that each Related Item must have a unique title before migration can
-proceed. If you prefer resolving duplicates as showcases, you can use the --allow-duplicates
-option to migrate them anyways. Duplicate Relations will be created as
-'duplicate_' + original_related_title + '_' + related_id
-
-    paster showcase migrate -c {path to production.ini} --allow-duplicates
-
-The Related Item property ``type`` will become a Showcase tag. The Related Item
-properties ``created``, ``owner_id``, ``view_count``, and ``featured`` have no
-equivalent in Showcases and will not be migrated.
-
-Related Item data is not removed from the database by this command.
+    paster showcase markdown-to-html -c {path to production.ini}
 
 -----------------
 Running the Tests
@@ -238,3 +257,4 @@ See: "Internationalizing strings in extensions" : http://docs.ckan.org/en/latest
 3. Compile your language catalog ( You can force pybabel compile to compile messages marked as fuzzy with the -f)
 
        python setup.py compile_catalog -f -l es
+

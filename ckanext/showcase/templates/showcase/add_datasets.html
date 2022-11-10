@@ -44,7 +44,7 @@
                   <th class="table-actions">
                     <div class="btn-group">
                       <button name="bulk_action.showcase_add" value="add" class="btn" type="submit">
-                        <i class="icon-plus"></i>
+                        <i class="fa fa-plus icon-plus"></i>
                         {{ _('Add to Showcase') }}
                       </button>
                     </div>
@@ -63,7 +63,7 @@
                     </td>
                     <td class="context">
                       <h3 class="dataset-heading">
-                        {{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='package', action='read', id=package.name)) }}
+                        {{ h.link_to(title|truncate(truncate_title), h.url_for(controller='package', action='read', id=package.name)) }}
                       </h3>
                       {% if notes %}
                         <p>{{ notes|urlize }}</p>

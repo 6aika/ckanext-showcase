@@ -1,17 +1,6 @@
+# -*- coding: utf-8 -*-
 import ckan.plugins.toolkit as toolkit
-from ckan.lib.navl.validators import (not_empty,
-                                      empty,
-                                      if_empty_same_as,
-                                      ignore_missing,
-                                      ignore,
-                                      keep_extras)
-from ckan.logic.validators import (package_id_not_changed,
-                                   name_validator,
-                                   user_id_or_name_exists,
-                                   package_name_validator,
-                                   tag_string_convert,
-                                   ignore_not_package_admin,
-                                   no_http)
+
 from ckan.logic.schema import (default_tags_schema,
                                default_extras_schema,
                                default_resource_schema)
@@ -20,20 +9,40 @@ from ckanext.showcase.logic.validators import (
     convert_package_name_or_id_to_id_for_type_dataset,
     convert_package_name_or_id_to_id_for_type_showcase)
 
+if toolkit.check_ckan_version("2.10"):
+    unicode_safe = toolkit.get_validator("unicode_safe")
+else:
+    import six
+    unicode_safe = six.text_type
+
+
+not_empty = toolkit.get_validator("not_empty")
+empty = toolkit.get_validator("empty")
+if_empty_same_as = toolkit.get_validator("if_empty_same_as")
+ignore_missing = toolkit.get_validator("ignore_missing")
+ignore = toolkit.get_validator("ignore")
+keep_extras = toolkit.get_validator("keep_extras")
+
+package_id_not_changed = toolkit.get_validator("package_id_not_changed")
+name_validator = toolkit.get_validator("name_validator")
+user_id_or_name_exists = toolkit.get_validator("user_id_or_name_exists")
+package_name_validator = toolkit.get_validator("package_name_validator")
+tag_string_convert = toolkit.get_validator("tag_string_convert")
+ignore_not_package_admin = toolkit.get_validator("ignore_not_package_admin")
+url_validator = toolkit.get_validator("url_validator")
 
 def showcase_base_schema():
     schema = {
         'id': [empty],
         'revision_id': [ignore],
-        'name': [not_empty, unicode, name_validator, package_name_validator],
-        'title': [if_empty_same_as("name"), unicode],
-        'author': [ignore_missing, unicode],
-        'author_email': [ignore_missing, unicode],
-        'notes': [ignore_missing, unicode],
-        'url': [ignore_missing, unicode],
+        'name': [not_empty, name_validator, package_name_validator],
+        'title': [if_empty_same_as("name"), unicode_safe],
+        'author': [ignore_missing, unicode_safe],
+        'author_email': [ignore_missing, unicode_safe],
+        'notes': [ignore_missing, unicode_safe],
+        'url': [ignore_missing, url_validator],
         'state': [ignore_not_package_admin, ignore_missing],
-        'type': [ignore_missing, unicode],
-        'log_message': [ignore_missing, unicode, no_http],
+        'type': [ignore_missing, unicode_safe],
         '__extras': [ignore],
         '__junk': [empty],
         'resources': default_resource_schema(),
@@ -43,10 +52,7 @@ def showcase_base_schema():
         'save': [ignore],
         'return_to': [ignore],
         'image_url': [toolkit.get_validator('ignore_missing'),
-                      toolkit.get_converter('convert_to_extras')],
-        'original_related_item_id': [
-            toolkit.get_validator('ignore_missing'),
-            toolkit.get_converter('convert_to_extras')]
+                      toolkit.get_converter('convert_to_extras')]
     }
     return schema
 
@@ -65,11 +71,11 @@ def showcase_update_schema():
     # Supplying the package name when updating a package is optional (you can
     # supply the id to identify the package instead).
     schema['name'] = [ignore_missing, name_validator,
-                      package_name_validator, unicode]
+                      package_name_validator, unicode_safe]
 
     # Supplying the package title when updating a package is optional, if it's
     # not supplied the title will not be changed.
-    schema['title'] = [ignore_missing, unicode]
+    schema['title'] = [ignore_missing, unicode_safe]
 
     return schema
 
@@ -100,8 +106,8 @@ def showcase_show_schema():
     schema['metadata_modified'] = []
     schema['creator_user_id'] = []
     schema['num_tags'] = []
-    schema['revision_id'] = []
-    schema['tracking_summary'] = []
+    schema['revision_id'] = [ignore_missing]
+    schema['tracking_summary'] = [ignore_missing]
 
     schema.update({
         'image_url': [toolkit.get_converter('convert_from_extras'),
@@ -116,9 +122,9 @@ def showcase_show_schema():
 
 def showcase_package_association_create_schema():
     schema = {
-        'package_id': [not_empty, unicode,
+        'package_id': [not_empty, unicode_safe,
                        convert_package_name_or_id_to_id_for_type_dataset],
-        'showcase_id': [not_empty, unicode,
+        'showcase_id': [not_empty, unicode_safe,
                         convert_package_name_or_id_to_id_for_type_showcase]
     }
     return schema
@@ -130,7 +136,7 @@ def showcase_package_association_delete_schema():
 
 def showcase_package_list_schema():
     schema = {
-        'showcase_id': [not_empty, unicode,
+        'showcase_id': [not_empty, unicode_safe,
                         convert_package_name_or_id_to_id_for_type_showcase]
     }
     return schema
@@ -138,7 +144,7 @@ def showcase_package_list_schema():
 
 def package_showcase_list_schema():
     schema = {
-        'package_id': [not_empty, unicode,
+        'package_id': [not_empty, unicode_safe,
                        convert_package_name_or_id_to_id_for_type_dataset]
     }
     return schema
@@ -146,7 +152,7 @@ def package_showcase_list_schema():
 
 def showcase_admin_add_schema():
     schema = {
-        'username': [not_empty, user_id_or_name_exists, unicode],
+        'username': [not_empty, user_id_or_name_exists, unicode_safe],
     }
     return schema
 
