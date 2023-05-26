@@ -4,17 +4,21 @@
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 # 
+# Translators:
+# Joonas Dukpa, 2018
+# Hami Kekkonen <hami.kekkonen@hel.fi>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-showcase 1.0.0b1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-09-23 14:49+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2018\n"
-"Language-Team: Swedish (https://www.transifex.com/6aika-dataportal/teams/68018/sv/)\n"
+"PO-Revision-Date: 2017-02-23 11:50+0000\n"
+"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2023\n"
+"Language-Team: Swedish (https://app.transifex.com/6aika-dataportal/teams/68018/sv/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 "Language: sv\n"
@@ -77,7 +81,7 @@ msgstr "Organisationer"
 #: ckanext/showcase/controller.py:463 ckanext/showcase/templates/header.html:7
 #: ckanext/showcase/templates/package/read_base.html:5
 msgid "Groups"
-msgstr "Grupper"
+msgstr "Kategorier"
 
 #: ckanext/showcase/controller.py:464 ckanext/showcase/plugin.py:103
 #: ckanext/showcase/templates/showcase/new_package_form.html:33
@@ -480,8 +484,8 @@ msgid ""
 "Sysadmins can manage Showcase Admins from the <a href='%(url)s'>Showcase "
 "configuration page</a>."
 msgstr ""
-"Sysadmins kan hantera Applikation Admins från <a href='%(url)s"
-"'>Applikationer-konfigurationssidan.</a>"
+"Sysadmins kan hantera Applikation Admins från <a "
+"href='%(url)s'>Applikationer-konfigurationssidan.</a>"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:21
 msgid "Submitted by"
