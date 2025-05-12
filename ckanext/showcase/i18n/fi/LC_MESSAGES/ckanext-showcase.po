@@ -408,7 +408,7 @@ msgstr "Ulkoinen lähde"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:44
 msgid "http://www.example.com"
-msgstr "http://www.example.com"
+msgstr "https://www.example.com"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:48
 msgid "Submitted By"
@@ -420,7 +420,7 @@ msgstr "Etunimi Sukunimi"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "Submitter Email"
-msgstr "Ilmoittajan sähköpostiosoite"
+msgstr "Sähköpostiosoite"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "joe@example.com"
