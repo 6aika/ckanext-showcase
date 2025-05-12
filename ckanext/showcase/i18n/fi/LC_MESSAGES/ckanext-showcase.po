@@ -133,11 +133,11 @@ msgstr "Ei löytynyt"
 #: ckanext/showcase/logic/validators.py:29
 #: ckanext/showcase/templates/package/read_base.html:4
 msgid "Dataset"
-msgstr "Tietoaineisto"
+msgstr "Data"
 
 #: ckanext/showcase/templates/header.html:5
 msgid "Datasets"
-msgstr "Tietoaineistot"
+msgstr "Datat"
 
 #: ckanext/showcase/templates/header.html:8
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:3
