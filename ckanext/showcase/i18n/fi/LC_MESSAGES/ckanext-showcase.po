@@ -507,11 +507,11 @@ msgstr "Sovelluksella ei ole kuvausta"
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
 msgstr[0] "{num} tietoaineisto"
-msgstr[1] "{num} tietoaineistoa"
+msgstr[1] "{num} dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:37
 msgid "0 Datasets"
-msgstr "0 tietoaineistoa"
+msgstr "0 dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:41
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:42
