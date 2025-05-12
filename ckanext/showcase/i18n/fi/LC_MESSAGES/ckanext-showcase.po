@@ -276,7 +276,7 @@ msgstr "Aktiivisuusvirta"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:3
 msgid "Showcases - Add datasets"
-msgstr "Sovellukset - Lisää tietoaineisto"
+msgstr "Sovellukset - Lisää data"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:21
 #: ckanext/showcase/templates/showcase/manage_datasets.html:24
