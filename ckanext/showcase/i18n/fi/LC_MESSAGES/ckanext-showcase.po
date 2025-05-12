@@ -72,7 +72,7 @@ msgstr[1] "Datat on liitetty sovellukseen"
 msgid "The dataset has been removed from the showcase."
 msgid_plural "The datasets have been removed from the showcase."
 msgstr[0] "Tietoaineisto on poistettu sovelluksesta"
-msgstr[1] "Tietoaineistot on poistettu sovelluksesta"
+msgstr[1] "Datat on poistettu sovelluksesta"
 
 #: ckanext/showcase/controller.py:462 ckanext/showcase/templates/header.html:6
 msgid "Organizations"
