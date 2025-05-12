@@ -520,7 +520,7 @@ msgstr "Näytä {showcase_title}"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
 msgid "Remove dataset from this showcase"
-msgstr "Poista tietoaineisto tästä sovelluksesta"
+msgstr "Poista data tästä sovelluksesta"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
 msgid "{number} showcase found for '{query}'"
