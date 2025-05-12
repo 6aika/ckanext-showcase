@@ -360,7 +360,7 @@ msgstr "Sovellukset - Hallitse datoja"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:96
 msgid "Datasets in this showcase"
-msgstr "Sovellukseen liittyvät tietoaineistot"
+msgstr "Sovellukseen liittyvät datat"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:109
 msgid "Remove from Showcase"
