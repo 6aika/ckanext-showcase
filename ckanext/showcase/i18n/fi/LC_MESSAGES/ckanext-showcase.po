@@ -268,7 +268,7 @@ msgstr "Sovellukset, joihin liittyy dataa {dataset_name}"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
-msgstr "Tietoaineisto ei liity yhteenkään sovellukseen"
+msgstr "Data ei liity yhteenkään sovellukseen"
 
 #: ckanext/showcase/templates/package/read_base.html:6
 msgid "Activity Stream"
