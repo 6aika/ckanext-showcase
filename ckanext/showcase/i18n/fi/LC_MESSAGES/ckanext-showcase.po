@@ -352,11 +352,11 @@ msgstr "Muokkaa sovellusta"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:42
 msgid "Manage datasets"
-msgstr "Hallitse tietoaineistoja"
+msgstr "Hallitse datoja"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:3
 msgid "Showcases - Manage datasets"
-msgstr "Sovellukset - Hallitse tietoaineistoja"
+msgstr "Sovellukset - Hallitse datoja"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:96
 msgid "Datasets in this showcase"
