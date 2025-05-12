@@ -264,7 +264,7 @@ msgstr "Liitä sovellukseen"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:17
 msgid "Showcases featuring {dataset_name}"
-msgstr "Sovellukset, joihin liittyy tietoaineisto {dataset_name}"
+msgstr "Sovellukset, joihin liittyy dataa {dataset_name}"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
