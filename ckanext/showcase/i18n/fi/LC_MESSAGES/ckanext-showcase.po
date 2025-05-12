@@ -60,13 +60,13 @@ msgstr "Ei oikeuksia nähdä tätä sivua"
 
 #: ckanext/showcase/controller.py:212
 msgid "Unauthorized to read package"
-msgstr "Ei oikeuksia lukea tietoaineistoa"
+msgstr "Ei oikeuksia lukea dataa"
 
 #: ckanext/showcase/controller.py:227 ckanext/showcase/controller.py:329
 msgid "The dataset has been added to the showcase."
 msgid_plural "The datasets have been added to the showcase."
 msgstr[0] "Tietoaineisto on liitetty sovellukseen"
-msgstr[1] "Tietoaineistot on liitetty sovellukseen"
+msgstr[1] "Datat on liitetty sovellukseen"
 
 #: ckanext/showcase/controller.py:241 ckanext/showcase/controller.py:297
 msgid "The dataset has been removed from the showcase."
