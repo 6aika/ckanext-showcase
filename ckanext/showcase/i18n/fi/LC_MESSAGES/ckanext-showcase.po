@@ -234,7 +234,7 @@ msgstr "{site_title} tilastot"
 msgid "dataset"
 msgid_plural "datasets"
 msgstr[0] "tietoaineisto"
-msgstr[1] "tietoaineistot"
+msgstr[1] "datat"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:16
 msgid "organization"
@@ -256,7 +256,7 @@ msgstr[1] "sovellukset"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
-msgstr "Liitä tietoaineisto tähän sovellukseen"
+msgstr "Liitä data tähän sovellukseen"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Add to showcase"
