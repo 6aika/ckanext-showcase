@@ -52,7 +52,7 @@ msgstr "Sovellus on poistettu."
 
 #: ckanext/showcase/controller.py:201 ckanext/showcase/controller.py:210
 msgid "Dataset not found"
-msgstr "Tietoaineistoa ei löytynyt"
+msgstr "Dataa ei löytynyt"
 
 #: ckanext/showcase/controller.py:203
 msgid "Not authorized to see this page"
