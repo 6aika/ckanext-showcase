@@ -493,11 +493,11 @@ msgstr "Ilmoittaja"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
 msgid "Datasets in Showcase"
-msgstr "Sovellukseen liittyvät tietoaineistot"
+msgstr "Sovellukseen liittyvät datat"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
 msgid "There are no Datasets in this Showcase"
-msgstr "Sovellukseen ei liity tietoaineistoja"
+msgstr "Sovellukseen ei liity dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
 msgid "This showcase has no description"
