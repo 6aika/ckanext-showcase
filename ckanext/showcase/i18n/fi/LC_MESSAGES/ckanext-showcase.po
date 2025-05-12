@@ -311,7 +311,7 @@ msgstr "Katsotuimmat"
 #: ckanext/showcase/templates/showcase/add_datasets.html:31
 #: ckanext/showcase/templates/showcase/manage_datasets.html:36
 msgid "Datasets available to add to this showcase"
-msgstr "Tietoaineistot, jotka voi liittää tähän sovellukseen"
+msgstr "Datat, jotka voi liittää tähän sovellukseen"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
@@ -321,7 +321,7 @@ msgstr "Liitä sovellukseen"
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
 msgid "No datasets could be found"
-msgstr "Tietoaineistoja ei löytynyt"
+msgstr "Datoja ei löytynyt"
 
 #: ckanext/showcase/templates/showcase/confirm_delete.html:3
 #: ckanext/showcase/templates/showcase/confirm_delete.html:15
