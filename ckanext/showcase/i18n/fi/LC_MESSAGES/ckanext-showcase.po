@@ -368,7 +368,7 @@ msgstr "Poista sovelluksesta"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:140
 msgid "This showcase has no datasets associated to it"
-msgstr "Tähän sovellukseen ei liity tietoaineistoja"
+msgstr "Tähän sovellukseen ei liity dataa"
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
