@@ -6,6 +6,7 @@
 # 
 # Translators:
 # Zharktas <jari-pekka.voutilainen@gofore.com>, 2025
+# Hami Kekkonen <hami.kekkonen@hel.fi>, 2025
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-09-23 14:49+0100\n"
 "PO-Revision-Date: 2025-02-27 08:11+0000\n"
-"Last-Translator: Zharktas <jari-pekka.voutilainen@gofore.com>, 2025\n"
+"Last-Translator: Hami Kekkonen <hami.kekkonen@hel.fi>, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/6aika-dataportal/teams/68018/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 
 #: ckanext/showcase/controller.py:56
 msgid "Unauthorized to create a package"
-msgstr "Ei oikeuksia luoda tietoaineistoa"
+msgstr "Ei oikeuksia luoda uutta dataa"
 
 #: ckanext/showcase/controller.py:71 ckanext/showcase/controller.py:267
 msgid "User not authorized to edit {showcase_id}"
@@ -51,7 +52,7 @@ msgstr "Sovellus on poistettu."
 
 #: ckanext/showcase/controller.py:201 ckanext/showcase/controller.py:210
 msgid "Dataset not found"
-msgstr "Tietoaineistoa ei löytynyt"
+msgstr "Dataa ei löytynyt"
 
 #: ckanext/showcase/controller.py:203
 msgid "Not authorized to see this page"
@@ -59,19 +60,19 @@ msgstr "Ei oikeuksia nähdä tätä sivua"
 
 #: ckanext/showcase/controller.py:212
 msgid "Unauthorized to read package"
-msgstr "Ei oikeuksia lukea tietoaineistoa"
+msgstr "Ei oikeuksia lukea dataa"
 
 #: ckanext/showcase/controller.py:227 ckanext/showcase/controller.py:329
 msgid "The dataset has been added to the showcase."
 msgid_plural "The datasets have been added to the showcase."
 msgstr[0] "Tietoaineisto on liitetty sovellukseen"
-msgstr[1] "Tietoaineistot on liitetty sovellukseen"
+msgstr[1] "Datat on liitetty sovellukseen"
 
 #: ckanext/showcase/controller.py:241 ckanext/showcase/controller.py:297
 msgid "The dataset has been removed from the showcase."
 msgid_plural "The datasets have been removed from the showcase."
 msgstr[0] "Tietoaineisto on poistettu sovelluksesta"
-msgstr[1] "Tietoaineistot on poistettu sovelluksesta"
+msgstr[1] "Datat on poistettu sovelluksesta"
 
 #: ckanext/showcase/controller.py:462 ckanext/showcase/templates/header.html:6
 msgid "Organizations"
@@ -132,11 +133,11 @@ msgstr "Ei löytynyt"
 #: ckanext/showcase/logic/validators.py:29
 #: ckanext/showcase/templates/package/read_base.html:4
 msgid "Dataset"
-msgstr "Tietoaineisto"
+msgstr "Data"
 
 #: ckanext/showcase/templates/header.html:5
 msgid "Datasets"
-msgstr "Tietoaineistot"
+msgstr "Datat"
 
 #: ckanext/showcase/templates/header.html:8
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:3
@@ -183,8 +184,8 @@ msgstr "Lisää olemassa oleva käyttäjä"
 msgid ""
 "To make an existing user a Showcase Admin, search for their username below."
 msgstr ""
-"Tehdäksesi olemassa olevasta käyttäjästä sovellusten ylläpitäjän, etsi hänet"
-" käyttäjätunnuksella."
+"Tehdäksesi olemassa olevasta käyttäjästä sovellusten ylläpitäjän, etsi hänen"
+" käyttäjätunnuksensa."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:23
 msgid "Username"
@@ -233,7 +234,7 @@ msgstr "{site_title} tilastot"
 msgid "dataset"
 msgid_plural "datasets"
 msgstr[0] "tietoaineisto"
-msgstr[1] "tietoaineistot"
+msgstr[1] "datat"
 
 #: ckanext/showcase/templates/home/snippets/stats.html:16
 msgid "organization"
@@ -255,7 +256,7 @@ msgstr[1] "sovellukset"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
-msgstr "Liitä tietoaineisto tähän sovellukseen"
+msgstr "Liitä data tähän sovellukseen"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Add to showcase"
@@ -263,11 +264,11 @@ msgstr "Liitä sovellukseen"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:17
 msgid "Showcases featuring {dataset_name}"
-msgstr "Sovellukset, joihin liittyy tietoaineisto {dataset_name}"
+msgstr "Sovellukset, joihin liittyy dataa {dataset_name}"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
-msgstr "Tietoaineisto ei liity yhteenkään sovellukseen"
+msgstr "Data ei liity yhteenkään sovellukseen"
 
 #: ckanext/showcase/templates/package/read_base.html:6
 msgid "Activity Stream"
@@ -275,7 +276,7 @@ msgstr "Aktiivisuusvirta"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:3
 msgid "Showcases - Add datasets"
-msgstr "Sovellukset - Lisää tietoaineisto"
+msgstr "Sovellukset - Lisää dataa"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:21
 #: ckanext/showcase/templates/showcase/manage_datasets.html:24
@@ -310,7 +311,7 @@ msgstr "Katsotuimmat"
 #: ckanext/showcase/templates/showcase/add_datasets.html:31
 #: ckanext/showcase/templates/showcase/manage_datasets.html:36
 msgid "Datasets available to add to this showcase"
-msgstr "Tietoaineistot, jotka voi liittää tähän sovellukseen"
+msgstr "Datat, jotka voi liittää tähän sovellukseen"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
@@ -320,7 +321,7 @@ msgstr "Liitä sovellukseen"
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
 msgid "No datasets could be found"
-msgstr "Tietoaineistoja ei löytynyt"
+msgstr "Datoja ei löytynyt"
 
 #: ckanext/showcase/templates/showcase/confirm_delete.html:3
 #: ckanext/showcase/templates/showcase/confirm_delete.html:15
@@ -351,15 +352,15 @@ msgstr "Muokkaa sovellusta"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:42
 msgid "Manage datasets"
-msgstr "Hallitse tietoaineistoja"
+msgstr "Hallitse datoja"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:3
 msgid "Showcases - Manage datasets"
-msgstr "Sovellukset - Hallitse tietoaineistoja"
+msgstr "Sovellukset - Hallitse datoja"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:96
 msgid "Datasets in this showcase"
-msgstr "Sovellukseen liittyvät tietoaineistot"
+msgstr "Sovellukseen liittyvät datat"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:109
 msgid "Remove from Showcase"
@@ -367,7 +368,7 @@ msgstr "Poista sovelluksesta"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:140
 msgid "This showcase has no datasets associated to it"
-msgstr "Tähän sovellukseen ei liity tietoaineistoja"
+msgstr "Tähän sovellukseen ei liity dataa"
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
@@ -407,7 +408,7 @@ msgstr "Ulkoinen lähde"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:44
 msgid "http://www.example.com"
-msgstr "http://www.example.com"
+msgstr "https://www.example.com"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:48
 msgid "Submitted By"
@@ -419,7 +420,7 @@ msgstr "Etunimi Sukunimi"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "Submitter Email"
-msgstr "Ilmoittajan sähköpostiosoite"
+msgstr "Sähköpostiosoite"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:50
 msgid "joe@example.com"
@@ -492,11 +493,11 @@ msgstr "Ilmoittaja"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
 msgid "Datasets in Showcase"
-msgstr "Sovellukseen liittyvät tietoaineistot"
+msgstr "Sovellukseen liittyvät datat"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
 msgid "There are no Datasets in this Showcase"
-msgstr "Sovellukseen ei liity tietoaineistoja"
+msgstr "Sovellukseen ei liity dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
 msgid "This showcase has no description"
@@ -506,11 +507,11 @@ msgstr "Sovelluksella ei ole kuvausta"
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
 msgstr[0] "{num} tietoaineisto"
-msgstr[1] "{num} tietoaineistoa"
+msgstr[1] "{num} dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:37
 msgid "0 Datasets"
-msgstr "0 tietoaineistoa"
+msgstr "0 dataa"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:41
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:42
@@ -519,7 +520,7 @@ msgstr "Näytä {showcase_title}"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
 msgid "Remove dataset from this showcase"
-msgstr "Poista tietoaineisto tästä sovelluksesta"
+msgstr "Poista data tästä sovelluksesta"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
 msgid "{number} showcase found for '{query}'"
